@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundScape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0468" translatesAutoresizingMaskIntoConstraints="NO" id="dbG-c1-95W">
+                                <rect key="frame" x="16" y="36" width="343" height="299.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LHC0" translatesAutoresizingMaskIntoConstraints="NO" id="FOr-J5-dDS">
+                                <rect key="frame" x="414" y="16" width="338" height="322"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LHC0" translatesAutoresizingMaskIntoConstraints="NO" id="cXS-Sb-w7g">
+                                <rect key="frame" x="16" y="351.5" width="343" height="299.5"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cXS-Sb-w7g" firstAttribute="height" secondItem="dbG-c1-95W" secondAttribute="height" id="BXZ-0w-d4l"/>
+                            <constraint firstItem="dbG-c1-95W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EhE-yc-cGG"/>
+                            <constraint firstItem="FOr-J5-dDS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="GLh-wv-pAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cXS-Sb-w7g" secondAttribute="bottom" constant="16" id="L7D-z6-IV2"/>
+                            <constraint firstItem="FOr-J5-dDS" firstAttribute="leading" secondItem="dbG-c1-95W" secondAttribute="trailing" constant="16" id="OUj-Tk-XaS"/>
+                            <constraint firstItem="FOr-J5-dDS" firstAttribute="width" secondItem="dbG-c1-95W" secondAttribute="width" id="Ty3-ET-1RJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXS-Sb-w7g" secondAttribute="trailing" constant="16" id="UWm-n3-L0M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOr-J5-dDS" secondAttribute="trailing" constant="16" id="WsQ-Ed-wGc"/>
+                            <constraint firstItem="cXS-Sb-w7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X0f-dW-Jes"/>
+                            <constraint firstItem="FOr-J5-dDS" firstAttribute="height" secondItem="dbG-c1-95W" secondAttribute="height" id="aJs-r8-MXv"/>
+                            <constraint firstItem="dbG-c1-95W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="i3x-ME-5QA"/>
+                            <constraint firstItem="cXS-Sb-w7g" firstAttribute="width" secondItem="dbG-c1-95W" secondAttribute="width" id="lgd-QS-yOd"/>
+                            <constraint firstItem="dbG-c1-95W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="u7b-Tv-hzW"/>
+                            <constraint firstItem="dbG-c1-95W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v0U-KR-fMY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FOr-J5-dDS" secondAttribute="bottom" constant="16" id="vOV-X8-WjL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dbG-c1-95W" secondAttribute="bottom" constant="16" id="wlb-gp-AQP"/>
+                            <constraint firstItem="cXS-Sb-w7g" firstAttribute="top" secondItem="dbG-c1-95W" secondAttribute="bottom" constant="16" id="yzj-jJ-be7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FOr-J5-dDS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="WsQ-Ed-wGc"/>
+                                <exclude reference="vOV-X8-WjL"/>
+                                <exclude reference="wlb-gp-AQP"/>
+                                <exclude reference="EhE-yc-cGG"/>
+                                <exclude reference="u7b-Tv-hzW"/>
+                                <exclude reference="GLh-wv-pAa"/>
+                                <exclude reference="OUj-Tk-XaS"/>
+                                <exclude reference="Ty3-ET-1RJ"/>
+                                <exclude reference="aJs-r8-MXv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="FOr-J5-dDS"/>
+                                <exclude reference="cXS-Sb-w7g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="X0f-dW-Jes"/>
+                                <exclude reference="UWm-n3-L0M"/>
+                                <include reference="WsQ-Ed-wGc"/>
+                                <include reference="vOV-X8-WjL"/>
+                                <include reference="wlb-gp-AQP"/>
+                                <include reference="EhE-yc-cGG"/>
+                                <include reference="u7b-Tv-hzW"/>
+                                <include reference="GLh-wv-pAa"/>
+                                <include reference="OUj-Tk-XaS"/>
+                                <include reference="Ty3-ET-1RJ"/>
+                                <include reference="aJs-r8-MXv"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-103.89805097451276" y="114.40000000000001"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0468" width="1280" height="1024"/>
+        <image name="LHC0" width="1920" height="1080"/>
+    </resources>
 </document>
